@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../css/Header.css";
 
 const Header = ({ cambioCategoria }) => {
@@ -19,7 +20,7 @@ const Header = ({ cambioCategoria }) => {
       <nav className="encabezado">
         <ul className="lista">
           <li className="lista-item">
-            <a href="/">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li
             className={`lista-item ${

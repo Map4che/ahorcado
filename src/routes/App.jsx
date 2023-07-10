@@ -10,7 +10,7 @@ function App() {
         <Route path="/" exact element={<Preparar />} />
         <Route path="/play" exact element={<Juego />} />
 
-        <Route path="/*" exact element={<Preparar />} />
+        <Route path="*" exact element={<Preparar />} />
       </Routes>
     </Router>
   );
