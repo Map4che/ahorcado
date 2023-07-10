@@ -1,0 +1,78 @@
+.nube {
+  border-radius: 100%;
+  background-color: white;
+  opacity: 0.4;
+  position: absolute;
+  z-index: -1;
+
+  animation: nubes 20s linear infinite;
+}
+.nube:nth-child(1) {
+  top: 20%;
+  right: 0;
+  width: 22rem;
+  height: 12rem;
+  animation-duration: 20s;
+  animation-delay: 1s;
+}
+
+.nube:nth-child(2) {
+  top: 27%;
+  right: -100%;
+  width: 14rem;
+  height: 3rem;
+  animation-duration: 24s;
+  animation-delay: 6s;
+}
+
+.nube:nth-child(3) {
+  top: 10%;
+  right: -100%;
+  width: 26rem;
+  height: 10rem;
+  animation-duration: 42s;
+  animation-delay: 8s;
+}
+
+.nube:nth-child(4) {
+  top: 3%;
+  right: -100%;
+  width: 40rem;
+  height: 10rem;
+  animation-duration: 30s;
+  animation-delay: 3s;
+}
+
+.nube:nth-child(5) {
+  top: 20%;
+  right: -100%;
+  width: 24rem;
+  height: 6rem;
+  animation-duration: 38s;
+  animation-delay: 5s;
+}
+
+.nube:nth-child(6) {
+  top: 14%;
+  right: -100%;
+  width: 40rem;
+  height: 10rem;
+  animation-duration: 16s;
+  animation-delay: 4s;
+}
+
+@keyframes nubes {
+  100% {
+    right: 100%;
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  0% {
+    right: 0;
+    opacity: 0.2;
+  }
+}

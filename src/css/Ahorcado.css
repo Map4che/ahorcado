@@ -1,0 +1,18 @@
+canvas {
+  background-color: rgba(240, 255, 255, 0.404);
+}
+
+.canvas-ganador {
+  background-image: url(../images/cup-g18109050b_640.jpg);
+  z-index: 2;
+  background: center cover no-repeat;
+  width: 300px;
+  height: 200px;
+}
+
+.canvas-perdedor {
+  background-image: url(../images/blue-gf68dc0557_640.jpg);
+  z-index: 2;
+  width: 300px;
+  height: 200px;
+}

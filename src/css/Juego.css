@@ -1,0 +1,81 @@
+div .container-juego {
+  display: flex;
+  text-align: center;
+  width: 60vw;
+  height: 75vh;
+  margin-top: -2rem;
+  align-items: center;
+}
+
+.title {
+  color: rgba(119, 10, 182, 0.829);
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+
+.lista-juego__item {
+  list-style: none;
+}
+
+.palabra-secreta-oculta {
+  margin-top: 3rem;
+}
+
+.letra {
+  width: 10rem;
+  height: 10rem;
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgba(250, 235, 215, 0.089);
+  border: none;
+  border-bottom: 1rem rgba(255, 0, 0, 0.5) solid;
+  margin-bottom: 0.8rem;
+}
+
+.btn-eleccion__input {
+  background-color: rgba(238, 121, 25, 0.603);
+  width: 10rem;
+  padding: 0;
+  height: 5rem;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  border-radius: 25px;
+  transition: 1s;
+}
+
+.btn-eleccion__input:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: rgba(255, 115, 0, 0.952);
+}
+
+.letra-por-letra {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.letra-por-letra li {
+  text-align: center;
+  border-bottom: 2px green solid;
+  font-size: 4rem;
+  margin: 0rem 1rem 2rem 1rem;
+}
+
+.oculto {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  div .container-juego {
+    width: 90vw;
+    height: 75vh;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}

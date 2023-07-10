@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gagalin", "Roboto";
+  max-width: 100vw;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(to right, cyan, rgb(0, 89, 255));
+  overflow: hidden;
+}

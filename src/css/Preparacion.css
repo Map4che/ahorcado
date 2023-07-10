@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  height: 40vh;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.418);
+  margin: auto;
+  margin-top: 6rem;
+  border-radius: 25px;
+  box-shadow: 2rem 2rem 4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.titulo-preparacion {
+  font-size: 4rem;
+  margin-bottom: 6rem;
+}
+
+.preparacion {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.palabra-secreta {
+  height: 5rem;
+  padding: 1.8rem;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  background-color: rgba(95, 158, 160, 0.575);
+  color: white;
+  transition: 0.4s;
+}
+
+.palabra-secreta::placeholder {
+  color: white;
+}
+
+.palabra-secreta:focus {
+  height: 6rem;
+  background-color: black;
+}
+
+.boton-inicio {
+  width: 40%;
+  margin: auto;
+  border-radius: 40px;
+  height: 4rem;
+  font-size: 2.4rem;
+  transition: 1s;
+}
+
+.boton-inicio:hover {
+  background-color: green;
+  color: aliceblue;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.pregunta-eleccion {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    width: 60vw;
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 40vw;
+    height: 50vh;
+  }
+}
