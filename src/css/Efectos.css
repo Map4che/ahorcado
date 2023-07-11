@@ -18,7 +18,7 @@
 
 .nube:nth-child(2) {
   top: 27%;
-  right: -100%;
+  right: 40rem;
   width: 14rem;
   height: 3rem;
   animation-duration: 24s;
@@ -27,7 +27,7 @@
 
 .nube:nth-child(3) {
   top: 10%;
-  right: -100%;
+  right: 80rem;
   width: 26rem;
   height: 10rem;
   animation-duration: 42s;
@@ -36,8 +36,8 @@
 
 .nube:nth-child(4) {
   top: 3%;
-  right: -100%;
-  width: 40rem;
+  right: 0;
+  width: 140rem;
   height: 10rem;
   animation-duration: 30s;
   animation-delay: 3s;
@@ -45,7 +45,7 @@
 
 .nube:nth-child(5) {
   top: 20%;
-  right: -100%;
+  right: 40rem;
   width: 24rem;
   height: 6rem;
   animation-duration: 38s;
@@ -54,7 +54,7 @@
 
 .nube:nth-child(6) {
   top: 14%;
-  right: -100%;
+  right: 120rem;
   width: 40rem;
   height: 10rem;
   animation-duration: 16s;
