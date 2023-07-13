@@ -47,6 +47,7 @@ div .container-juego {
   transform: scale(1.2);
   cursor: pointer;
   background-color: rgba(255, 115, 0, 0.952);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 
 .letra-por-letra {

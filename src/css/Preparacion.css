@@ -57,7 +57,7 @@
   color: aliceblue;
   cursor: pointer;
   transform: scale(1.2);
-  box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 
 .pregunta-eleccion {
