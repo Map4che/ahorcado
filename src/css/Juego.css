@@ -90,8 +90,8 @@ li .letra-palabra {
 @media screen and (max-width: 768px) {
   div .container-juego {
     margin-top: -1rem;
-    width: 90vw;
-    height: 90vh;
+    width: 80vw;
+    height: 80vh;
   }
 
   .title {
@@ -100,10 +100,21 @@ li .letra-palabra {
 
   .letra-por-letra {
     width: 90%;
+    margin: 0 0 0 3rem;
   }
 
   .letra-por-letra li {
     font-size: 2rem;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 0.8rem;
+  }
+
+  .btn-eleccion__input {
+    height: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .letra {
+    width: 6rem;
+    height: 6rem;
   }
 }
