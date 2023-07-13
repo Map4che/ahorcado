@@ -38,6 +38,7 @@ const Juego = () => {
   const [ganador, setGanador] = useState(false);
   const [perdedor, setPerdedor] = useState(false);
   const [mostrarBoton, setMostrarBoton] = useState(true);
+  const [palabraLarga, setPalabraLarga] = useState(false);
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -142,10 +143,24 @@ const Juego = () => {
     }
   }, [palabra]);
 
+  useEffect(() => {
+    if (palabra.length > 25) {
+      setPalabraLarga(true);
+    }
+  });
+
   return (
     <>
       <Header />
-      <div className="container container-juego">
+      <div
+        className={
+          ganador
+            ? "container container-juego juego-terminado"
+            : perdedor
+            ? "container container-juego juego-terminado"
+            : "container container-juego"
+        }
+      >
         <div>
           <h1 className="title">AHORCADO</h1>
         </div>
@@ -160,7 +175,13 @@ const Juego = () => {
               }
             />
           </li>
-          <li className="lista-juego__item palabra-secreta-oculta">
+          <li
+            className={
+              !palabraLarga
+                ? "lista-juego__item palabra-secreta-oculta"
+                : "lista-juego__item palabra-secreta-oculta palabra-larga"
+            }
+          >
             <ul className="letra-por-letra"></ul>
           </li>
           <li className="lista-juego__item letra-eleccion">

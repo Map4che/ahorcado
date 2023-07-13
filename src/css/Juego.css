@@ -2,7 +2,7 @@ div .container-juego {
   display: flex;
   text-align: center;
   width: 60vw;
-  height: 75vh;
+  height: 78vh;
   margin-top: -2rem;
   align-items: center;
 }
@@ -54,7 +54,7 @@ div .container-juego {
   list-style: none;
   width: 95%;
   max-width: 100%;
-  margin: 0 4rem 0 4rem;
+  margin: 0 1rem 0 1rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -86,12 +86,22 @@ li .letra-palabra {
   display: flex;
   align-items: center;
 }
+.palabra-larga {
+  max-height: 20vh;
+  overflow: scroll;
+}
 
 @media screen and (max-width: 768px) {
+  .palabra-larga {
+    max-height: 18vh;
+    overflow: scroll;
+  }
+
   div .container-juego {
-    margin-top: -1rem;
-    width: 80vw;
-    height: 80vh;
+    box-sizing: border-box;
+    margin-top: -2rem;
+    width: 88vw;
+    max-height: 72vh;
   }
 
   .title {
@@ -100,12 +110,12 @@ li .letra-palabra {
 
   .letra-por-letra {
     width: 90%;
-    margin: 0 0 0 3rem;
+    margin: 0 1rem 0 1rem;
   }
 
   .letra-por-letra li {
     font-size: 2rem;
-    margin: 1rem 1rem 1rem 0.8rem;
+    margin: 1rem 1rem 1rem 1;
   }
 
   .btn-eleccion__input {
@@ -116,5 +126,9 @@ li .letra-palabra {
   .letra {
     width: 6rem;
     height: 6rem;
+  }
+
+  .juego-terminado:nth-child(2) {
+    height: 65vh;
   }
 }
