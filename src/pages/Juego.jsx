@@ -8,6 +8,25 @@ const Juego = () => {
   const palabraString = localStorage.getItem("juego");
   const palabra = JSON.parse(palabraString);
   console.log(palabra);
+  let unaPalabra = [];
+  let palabraAgregar = "";
+  for (let i = 0; i < palabra.length; i++) {
+    let agregar = true;
+
+    if (palabra[i] != " ") {
+      palabraAgregar += palabra[i];
+    } else {
+      agregar = false;
+    }
+
+    if (!agregar || i == palabra.length - 1) {
+      unaPalabra.push(palabraAgregar);
+      palabraAgregar = "";
+    }
+  }
+
+  console.log(unaPalabra);
+
   const eleccionString = localStorage.getItem("eleccion");
   const eleccion = JSON.parse(eleccionString);
   console.log(eleccion);
@@ -103,11 +122,22 @@ const Juego = () => {
 
     if (letraPorLetraRef.current) {
       letraPorLetraRef.current.innerHTML = "";
-
+      let div = document.createElement("div");
       for (let i = 0; i < palabra.length; i++) {
         const li = document.createElement("li");
-        li.textContent = "_";
-        letraPorLetraRef.current.appendChild(li);
+
+        if (palabra[i] == " ") {
+          div = document.createElement("div");
+          li.classList.add("espacio-palabra");
+          div.appendChild(li);
+          letraPorLetraRef.current.appendChild(div);
+          div = document.createElement("div");
+        } else {
+          letraPorLetraRef.current.appendChild(div);
+          li.textContent = "_";
+          li.classList.add("letra-palabra");
+          div.appendChild(li);
+        }
       }
     }
   }, [palabra]);

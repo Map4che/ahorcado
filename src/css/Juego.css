@@ -52,10 +52,18 @@ div .container-juego {
 .letra-por-letra {
   display: flex;
   list-style: none;
-  justify-content: space-around;
-  max-width: 90%;
-  margin: auto;
+  width: 95%;
+  max-width: 100%;
+  margin: 0 4rem 0 4rem;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.letra-por-letra div {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
 }
 
 .letra-por-letra li {
@@ -69,13 +77,33 @@ div .container-juego {
   display: none;
 }
 
+li .espacio-palabra {
+  text-decoration: none;
+  margin: 0 1rem 0 1rem;
+}
+
+li .letra-palabra {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   div .container-juego {
+    margin-top: -1rem;
     width: 90vw;
-    height: 75vh;
+    height: 90vh;
   }
 
   .title {
     font-size: 3rem;
+  }
+
+  .letra-por-letra {
+    width: 90%;
+  }
+
+  .letra-por-letra li {
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
   }
 }
